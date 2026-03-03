@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NewShoes - Cuidados Modernos para seus Sapatos</title>
-    <!-- IMPORTANTE: Bibliotecas necessárias para animações -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <style>
@@ -45,7 +44,6 @@
             padding: var(--container-padding);
         }
 
-        /* Header Styles */
         header {
             position: fixed;
             top: 0;
@@ -185,7 +183,6 @@
             }
         }
 
-        /* Hero Section - Melhorado para melhor apresentação */
         .hero {
             min-height: 100vh;
             padding-top: var(--header-height);
@@ -304,7 +301,6 @@
             }
         }
 
-        /* BACKEND: Classe utilitária para animações */
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(20px);
@@ -316,7 +312,6 @@
             transform: translateY(0);
         }
 
-        /* Garantindo posicionamento inicial correto */
         .step, .plan, .about-item {
             opacity: 1;
             transform: none !important;
@@ -324,28 +319,22 @@
             position: relative;
         }
 
-        /* Ajustando o container para evitar layout shift */
         .steps, .plans, .about-content {
             min-height: 100px;
             position: relative;
         }
 
-        /* Ajustando o container de instruções */
         .instructions .container {
             position: relative;
         }
 
-        /* Ajustando o container de preços */
         .pricing .container {
             position: relative;
         }
 
-        /* Ajustando o container sobre */
         .about .container {
             position: relative;
         }
-
-        /* Hover effects para melhorar a interação */
         .step:hover, .plan:hover, .about-item:hover {
             transform: translateY(-5px) !important;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -380,7 +369,6 @@
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         }
 
-        /* Instructions Section */
         .instructions {
             padding: 6rem 0;
             background-color: var(--gray);
@@ -473,7 +461,6 @@
             justify-content: center;
         }
 
-        /* Pricing Section */
         .pricing {
             padding: 6rem 0;
         }
@@ -709,14 +696,12 @@
             font-size: 0.9rem;
         }
 
-        /* Animations */
         @keyframes float {
             0% { transform: translateY(0px); }
             50% { transform: translateY(-15px); }
             100% { transform: translateY(0px); }
         }
 
-        /* Responsiveness */
         @media (max-width: 992px) {
             .hero-content, .steps, .plans {
                 flex-direction: column;
@@ -767,12 +752,10 @@
             }
         }
 
-        /* Animation Elements */
         .floating {
             animation: float 6s ease-in-out infinite;
         }
 
-        /* About Section */
         .about {
             padding: 6rem 0;
             background-color: white;
@@ -812,7 +795,6 @@
         }
 
 
-         /* Seção de Unidades */
          .unidades-section {
             padding: 4rem 0;
             background-color: var(--light);
@@ -980,7 +962,6 @@
             height: 100%;
         }
 
-        /* Responsividade para a seção de unidades */
         @media (max-width: 992px) {
             .unidades-content {
                 grid-template-columns: 1fr;
@@ -1045,7 +1026,6 @@
     </style>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <div class="container header-content">
             <div class="logo">
@@ -1073,7 +1053,6 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="inicio" class="hero">
         <div class="container hero-content">
             <div class="hero-text">
@@ -1084,7 +1063,6 @@
             <div class="hero-image">
                 <div class="hero-image-container">
                     <div class="shoe-display">
-                        <!-- Imagem de sapato com URL absoluta -->
                         <img src="https://newshoes.com.br/wp-content/uploads/2024/08/tenis-antes-e-depois.png" alt="Comparação de sapatos antes e depois" class="shoe-image">
                     </div>
                 </div>
@@ -1102,7 +1080,6 @@
                     <h3>Selecione uma cidade</h3>
                     <input type="text" class="search-box" placeholder="Pesquise por cidade...">
                     <div class="cidades-list">
-                        <!-- Removendo as opções de cidade do HTML -->
                     </div>
                 </div>
                 <div id="right-content">
@@ -1114,7 +1091,6 @@
             </div>
         </div>
     </section>
-    <!-- Instructions Section -->
     <section id="instrucoes" class="instructions">
         <div class="container" style="max-width: none !important;">
             <div class="section-header">
@@ -1187,7 +1163,6 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
     <section id="precos" class="pricing">
         <div class="container">
             <div class="section-header">
@@ -1295,7 +1270,6 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer id="contato">
         <div class="container footer-content">
             <div class="footer-about">
@@ -1304,7 +1278,6 @@
                 </div>
                 <p>Transformando o cuidado com seus sapatos através da tecnologia e inovação.</p>
                 <div class="social-links">
-                    <!-- BACKEND: Link do WhatsApp deve ser configurado -->
                     <a href="#" target="_blank" class="social-icon" aria-label="WhatsApp">
                         
                         <svg fill="#FFFF" version="1.1" width="24" height="24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
@@ -1377,7 +1350,6 @@
     </footer>
 
     <script>
-        // Array de objetos com as informações das cidades
         const cidades = [
             {
                 nome: "Belo Horizonte - MG",
@@ -1436,16 +1408,13 @@
             }
         ];
 
-        //E apartir daqui que seja definido todos os pontos da logo (Gerei um base64 para nao ter que hospedar porem pode substituir por um link)
         let logoSrc = "https://newshoes.com.br/wp-content/uploads/2024/08/logomarca-oficial-new-shoes-2023-horizontal.png"
 
-        //Definindo a logo em todos os elementos com a classe MainLogo
         document.querySelectorAll('.MainLogo').forEach(logo=>{
             logo.src = logoSrc
         })
 
         document.addEventListener('DOMContentLoaded', async function() {
-            // Animações simples para o header e hero section
             const header = {
                 logo: document.querySelector('.logo'),
                 navItems: document.querySelectorAll('nav ul li'),
@@ -1454,13 +1423,11 @@
                 heroButton: document.querySelector('.hero-text .btn')
             };
 
-            // Animação simples do header
             if (header.logo) header.logo.animate([
                 { opacity: 0, transform: 'translateX(-50px)' },
                 { opacity: 1, transform: 'translateX(0)' }
             ], { duration: 1000, fill: 'forwards' });
 
-            // Animação dos itens de navegação
             if (header.navItems.length > 0) {
                 header.navItems.forEach((item, index) => {
                     item.animate([
@@ -1470,19 +1437,16 @@
                 });
             }
 
-            // Animação do título hero
             if (header.heroTitle) header.heroTitle.animate([
                 { opacity: 0, transform: 'translateY(50px)' },
                 { opacity: 1, transform: 'translateY(0)' }
             ], { duration: 1000, delay: 500, fill: 'forwards' });
 
-            // Animação do parágrafo hero
             if (header.heroParagraph) header.heroParagraph.animate([
                 { opacity: 0, transform: 'translateY(30px)' },
                 { opacity: 1, transform: 'translateY(0)' }
             ], { duration: 1000, delay: 700, fill: 'forwards' });
 
-            // Animação do botão hero
             if (header.heroButton) header.heroButton.animate([
                 { opacity: 0, transform: 'translateY(30px)' },
                 { opacity: 1, transform: 'translateY(0)' }
@@ -1495,7 +1459,6 @@
             const searchBox = document.querySelector('.search-box');
             const mapContainer = document.querySelector('.map-container');
 
-            // Função para criar os elementos de cidade
             function criarElementosCidade() {
                 cidades.forEach(cidade => {
                     const div = document.createElement('div');
@@ -1510,38 +1473,30 @@
                 });
             }
 
-            // Inicializa os elementos de cidade
             criarElementosCidade();
 
-            // Função para animar a transição do mapa
             function animarTransicaoMapa(lat, lng) {
-                // Adiciona classe de loading
                 mapContainer.classList.add('loading');
                 
-                // Anima a opacidade do iframe usando a Web Animation API
                 const fadeOut = mapsIframe.animate([
                     { opacity: 1 },
                     { opacity: 0 }
                 ], { duration: 300, fill: 'forwards' });
                 
                 fadeOut.onfinish = () => {
-                    // Atualiza o src do iframe
                     mapsIframe.src = `https://www.google.com/maps?q=${lat},${lng}&hl=pt-BR&z=14&output=embed`;
                     
-                    // Anima a opacidade de volta
                     const fadeIn = mapsIframe.animate([
                         { opacity: 0 },
                         { opacity: 1 }
                     ], { duration: 300, fill: 'forwards' });
                     
                     fadeIn.onfinish = () => {
-                        // Remove a classe de loading
                         mapContainer.classList.remove('loading');
                     };
                 };
             }
 
-            // Função para filtrar cidades
             function filterCities(searchTerm) {
                 const cidadeOptions = document.querySelectorAll('.cidade-option');
                 cidadeOptions.forEach(option => {
@@ -1558,15 +1513,12 @@
                 });
             }
 
-            // Evento de pesquisa
             searchBox.addEventListener('input', function() {
                 filterCities(this.value);
             });
             
-            // Evento de clique nas cidades
             document.querySelectorAll('.cidade-option').forEach(option => {
                 option.addEventListener('click', function() {
-                    // Remove classe active de todas as opções
                     document.querySelectorAll('.cidade-option').forEach(opt => {
                         opt.classList.remove('active');
                         opt.animate([
@@ -1576,16 +1528,13 @@
                     });
                     console.log(this);
                     
-                    // Adiciona classe active na opção selecionada
                     this.classList.add('active');
                     
-                    // Anima a opção selecionada
                     this.animate([
                         { transform: 'translateX(0)' },
                         { transform: 'translateX(5px)' }
                     ], { duration: 300, fill: 'forwards' });
                     
-                    // Atualiza o mapa com animação
                     const lat = this.dataset.lat;
                     const lng = this.dataset.lng;
                     animarTransicaoMapa(lat, lng);
@@ -1594,7 +1543,6 @@
                 });
             });
 
-            // Seleciona a primeira cidade por padrão
             const firstCity = document.querySelector(".cidade-option");
             if (firstCity) firstCity.click();
         });
