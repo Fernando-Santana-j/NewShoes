@@ -1,0 +1,16 @@
+{
+    "visible": true,
+    "name": "NewShoes",
+    "description": "Landing page desenvolvida para a marca NewShoes, com foco em apresentação institucional e conversão. Fui responsável pela criação do protótipo e desenvolvimento do front-end básico, priorizando organização visual, clareza das informações e experiência do usuário.",
+    "type":"company",
+    "status": "complete",
+    "deploy": "",
+    "technologies": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+    ],
+    "pinned": false,
+    "banner":"https://res.cloudinary.com/dmfgy0ccd/image/upload/v1772528184/Screenshot_20260303_055538_ghsdrl.png",
+    "complete": true
+}
